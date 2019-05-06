@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 Processed/
+bak/
 /.idea
 *.txt
 *.db

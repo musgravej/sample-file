@@ -294,7 +294,7 @@ def export_proof_records():
            "ORDER BY r DESC LIMIT 50) AS c LIMIT {2};".format(select_fields, samples, str(limit)))
 
     # print(g.sample_rowid)
-    # print(sql)
+    print(sql)
     rslt = db.execute(sql)
 
     write_rec = "{0}_PROOF.{1}".format(os.path.splitext(g.original_filename)[0], g.searchType)
@@ -396,5 +396,5 @@ if __name__ == '__main__':
             print("Processing: " + proc_file)
             import_file(proc_file)
 
-            # if os.path.isfile(os.path.join(os.curdir, 'split.db')):
-            #     os.remove(os.path.join(os.curdir, 'split.db'))
+            if os.path.isfile(os.path.join(os.curdir, 'split.db')):
+                os.remove(os.path.join(os.curdir, 'split.db'))
