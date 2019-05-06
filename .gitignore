@@ -1,6 +1,9 @@
 # Byte-compiled / optimized / DLL files
 Processed/
 /.idea
+*.txt
+*.db
+file_split_sql.py
 
 __pycache__/
 *.py[cod]
